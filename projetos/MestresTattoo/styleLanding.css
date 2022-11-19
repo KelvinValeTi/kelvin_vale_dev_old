@@ -1,0 +1,328 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Smooch+Sans&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(37, 37, 37);
+}
+
+/*=============
+menu navegação
+===============*/
+#nav-bar{
+    position:fixed;
+    width:100%;
+    background-color: rgb(0,0,0,0.8);
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+    padding:10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-menu-sand{
+    display:none;
+    width: 40px;
+    height:40px;
+    background-color: transparent;
+}
+
+#btn-menu-sand:hover{
+    border: 2px solid white;
+    border-radius:5px;
+}
+
+#icon-sand{
+    width:35px;
+    height:35px;
+    color:white;
+}
+
+#nav-bar ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:10px;
+}
+#nav-bar li{
+    padding-left:20px;
+    padding-right:20px;
+    list-style: none;
+}
+
+#nav-bar li:hover{
+    border-bottom: 3px white solid;
+    margin-bottom: -3px;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+/*===
+HOME
+====*/
+#home{
+    background: linear-gradient(0deg, rgba(29, 29, 29, 0.6) 0%, rgb(0, 0, 0) 100%), url(imgs/home.jpg);
+   
+    background-size: cover;
+
+    border-bottom: 5px rgb(29, 28, 28) solid;
+    height:100vh;
+    width:100%;
+}
+
+#home h1{
+    text-align: center;
+    padding:20%;
+    color:white;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size:50pt;
+    letter-spacing: 1.3rem;
+}
+
+/*====
+ABOUT
+=====*/
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 50px;
+    border-bottom: 5px rgb(29, 28, 28) solid;
+
+    background-color: rgb(192, 192, 192);
+}
+
+#sobre-div{
+    display:flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    width:700px;
+
+    color: white;
+}
+
+#sobre-div h1{
+    color:rgba(0, 0, 0, 0.9);
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5rem;
+
+    padding-left:20px;
+    font-size: 40pt;
+    
+}
+
+#sobre-div p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-align: justify;
+    padding:20px;
+
+    background-color: rgb(29, 28, 28, 0.7);
+    border-radius: 40px;
+
+}
+
+#manTattoo{
+    object-fit:cover;
+    width:100%;
+    height:200px;
+
+    border: 2px rgb(48, 48, 48) solid;
+    border-radius: 10px;
+}
+
+/*===
+TIME
+====*/
+#time{
+    padding: 30px;
+    align-items: center; 
+
+    border-bottom: 5px rgb(29, 28, 28) solid;
+
+}
+
+#time h1{
+    text-align: center;
+    font-size:30pt;
+    font-family: 'Roboto', sans-serif;
+    
+
+    color:white;
+    padding: 10px;
+}
+
+#time-tattoo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-content:center;
+    
+    gap:20px;
+
+    padding-top:20px;
+    color:white;
+}
+
+#time-tattoo div{
+    width:350px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+}
+
+.tatuadores{
+    object-fit:cover;
+    width:100%;
+    height:350px;
+    border-radius:50%;
+}
+
+/*======
+CONTATO
+========*/
+#contato{
+    background: linear-gradient(0deg, rgba(14, 14, 14, 0.9) 0%, rgb(0, 0, 0) 100%), url(imgs/estudio.jpg);   
+    background-size: cover;
+
+    padding:20px;
+    color:white;
+
+    font-family: 'Roboto', sans-serif;
+    
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato h1{
+    font-size: 30pt;
+    text-align: center;
+    padding:30px;   
+}
+
+#redes{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+}
+#redes i{
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+    font-size:30pt;
+}
+
+#redes i:hover{
+    color:red;
+}
+#endereco{
+    font-size:20pt;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#horario{
+    font-size:20pt;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#horario li{
+    padding-top:10px;
+    list-style: none;
+}
+
+/*=============
+RESPONSIVIDADE
+==============*/
+@media (min-width:1036px) and (max-width:1230px){   
+    #time-tattoo div{
+        width:300px;
+    }
+    .tatuadores{
+        height:300px;
+    }  
+}
+@media(min-width:851px) and (max-width:1035px){
+    #time h1{
+        font-size:25pt;
+    }   
+    #time-tattoo div{
+        width:250px;
+        font-size:18pt;
+    }
+    .tatuadores{
+        height:250px;
+    }
+}
+@media(min-width:746px) and (max-width:850px){
+    #time h1{
+        font-size:23pt;
+    }   
+    #time-tattoo div{
+        width:220px;
+        font-size:18pt;
+    }
+    .tatuadores{
+        height:220px;
+    }
+}
+@media(min-width:681px) and (max-width:745px){
+    #time h1{
+        font-size:20pt;
+    }   
+    #time-tattoo div{
+        width:200px;
+        font-size:16pt;
+    }
+    .tatuadores{
+        height:200px;
+    }
+}
+@media(min-width:581) and (max-width:680px){
+    #time h1{
+        font-size:20pt;
+    }   
+    #time-tattoo div{
+        width:160px;
+        font-size:16pt;
+    }
+    .tatuadores{
+        height:160px;
+    }
+}
+@media(max-width:580px){
+    #time h1{
+        font-size:18pt;
+    }   
+    #time-tattoo div{
+        width:140px;
+        font-size:15pt;
+    }
+    .tatuadores{
+        height:140px;
+    }
+}

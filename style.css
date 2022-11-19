@@ -85,6 +85,22 @@ header{
     border-bottom: 2px dashed white;
 }
 
+#home-links{
+    padding-top: 2vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icon{
+    color:white;
+}
+
+.icon:hover{
+    transition:1s;
+    color: green;
+}
+
 /**=========
     SOBRE  
 ============*/
@@ -124,20 +140,23 @@ header{
     padding-bottom:2vh;
 }
 
-#button-cv{
-    background-color: orangered;
+#sobre-div-column button{
     width:20vw;
     height:5vh;
+}
+
+.button-style{
+    background-color: orangered; 
     border-color: transparent;
     border-radius: 5px;
 }
 
-#button-cv:hover{
+.button-style:hover{
     background-color: green;
     transition: 1s;
 }
 
-#button-cv a{
+.button-style a{
     font-size:1.5rem;
 }
 
@@ -146,7 +165,49 @@ header{
 ============*/
 #projetos{
     background-color: rgb(47, 58, 58);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
+
+#title-projeto{
+    font-size:3.5rem;
+    color:white;
+    border-bottom: 3px dotted white;
+}
+
+
+#grid-projetos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 3vw;
+    padding:2vh;
+
+    color:white;
+    font-size:1.8rem;
+}
+
+.div-projeto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25vw;
+}
+
+.div-projeto h1{
+    border-bottom: 2px dashed white;
+    padding-bottom:0.5vh;
+}
+
+.div-projeto button{
+    padding-top:1vh;
+    margin-top:2vh;
+}
+
 
 
 
