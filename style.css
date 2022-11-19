@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Caveat', cursive;
+}
+
+
+/**=========
+    NAV-BAR  
+============*/
+header{
+    padding: 1vh 10vw 1vh 10vw;
+
+    width:100%;
+    position: fixed;
+
+    font-size:1.6rem;
+
+    background-color: rgb(41, 41, 41);
+    border-bottom: 3px solid #ccc;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.li-style{
+    list-style: none;   
+}
+
+.a-style{
+    text-decoration: none;
+    color:white;
+}
+
+.li-style a:hover{
+    border-bottom: 5px solid white;
+    transition: 1s;
+}
+
+/**=========
+    HOME  
+============*/
+
+#home{
+    background-image: linear-gradient(0deg, rgba(32, 32, 32, 0.8) 0%, rgba(41, 41, 41, 0.6) 100%), url("img/homeBackground.jpg");
+    
+    background-size: cover;
+    height:100vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img{
+    width:200px;
+    border-radius:50%;
+    box-shadow: -10px 5px 1px black;
+}
+
+#home-legenda{
+    padding:3vh;
+    text-align: center;
+
+    font-size:2.5rem;
+    color:white;
+}
+
+#home-legenda h1{
+    border-bottom: 2px dashed white;
+}
+
+/**=========
+    SOBRE  
+============*/
+
+#sobre{
+    padding:4vh 5vw 4vh 5vw;
+
+    background-color: rgb(37, 37, 37);
+
+    display:flex;
+    flex-direction: row;
+
+    color:white;
+    font-size: 1.2rem;
+}
+
+#sobre h1{
+    font-size:3rem;
+}
+
+#sobre img{
+    width: 30vw;
+    object-fit: cover;
+}
+
+#sobre-div-column{
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+
+    padding-left: 2vw;
+}
+
+#sobre-div-column div{
+    padding-top:2vh;
+    padding-bottom:2vh;
+}
+
+#button-cv{
+    background-color: orangered;
+    width:20vw;
+    height:5vh;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+#button-cv:hover{
+    background-color: green;
+    transition: 1s;
+}
+
+#button-cv a{
+    font-size:1.5rem;
+}
+
+/**=========
+    PROJETOS  
+============*/
+#projetos{
+    background-color: rgb(47, 58, 58);
+}
+
+
+
+
