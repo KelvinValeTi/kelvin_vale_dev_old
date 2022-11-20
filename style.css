@@ -29,16 +29,24 @@ header{
 
     background-color: rgb(41, 41, 41);
     border-bottom: 3px solid #ccc;
-}
-
-#nav-bar ul{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+}
+
+#ul-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .li-style{
-    list-style: none;   
+    list-style: none;
+    padding-left:3vw;
+    padding-right: 3vw;   
 }
 
 .a-style{
@@ -49,6 +57,26 @@ header{
 .li-style a:hover{
     border-bottom: 5px solid white;
     transition: 1s;
+}
+
+/*================
+Estilizando icone 
+menu sanduiche
+==================*/
+#btn-menu-sand{
+    display:none;
+    
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#icon-sand{
+    color:white;
+}
+
+#icon-sand:hover{
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 /**=========
@@ -112,17 +140,21 @@ header{
 
     display:flex;
     flex-direction: row;
+    justify-content: center;
+    align-items:initial;
 
     color:white;
-    font-size: 1.2rem;
+    font-size: 1.6em;
 }
+
+
 
 #sobre h1{
     font-size:3rem;
 }
 
 #sobre img{
-    width: 30vw;
+    width:500px;
     object-fit: cover;
 }
 
@@ -209,6 +241,16 @@ header{
 }
 
 
+/**=========
+FOOTER
+============*/
+footer{
+    background-color: rgb(37, 37, 37);
+    color:white;
+    text-align: right;
+
+    padding: 2vh 3vw 2vh 3vw;
+}
 
 
 
