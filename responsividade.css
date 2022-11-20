@@ -94,7 +94,7 @@ MENU SANDUICHE
     }
 }
 
-@media (max-width:660px){
+@media (max-width:660px) and (min-width:551px){
     header{ 
         display: flex;
         flex-direction: column;
@@ -128,6 +128,57 @@ MENU SANDUICHE
     #sobre-div-column{
         width: 470px;
         font-size:2rem;
+    }
+    
+    #sobre-div-column button{
+        width:50vw;
+        height:7vh;
+        align-self:center;
+    }
+
+    .div-projeto{
+        width: 60vw;
+    }
+    
+    #grid-projetos{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:550px){
+    header{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    #nav-bar ul{
+        display:none;
+    }
+
+    /*menu sanduiche*/
+    #btn-menu-sand{
+        display:block;
+        padding-left: 20px;
+    }
+
+    #sobre{
+        padding:3vh 4vw 3vh 4vw;
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre img{
+        width:420px;
+    }
+
+    #sobre-div-column{
+        width: 420px;
+        font-size:1.6rem;
     }
     
     #sobre-div-column button{
