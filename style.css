@@ -215,8 +215,8 @@ menu sanduiche
 #grid-projetos{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    gap: 3vw;
+
+    gap: 10vw;
     padding:2vh;
 
     color:white;
