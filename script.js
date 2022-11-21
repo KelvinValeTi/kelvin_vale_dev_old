@@ -46,10 +46,6 @@ handleTabletChange(mediaQuery);
 
 //Se o menu estiver aberto, ele fecha caso algum elemento fora do menu seja clicado.
 menu.addEventListener("click", fechaMenu);
-//home.addEventListener("click", fechaMenu);
-//sobre.addEventListener("click", fechaMenu);
-//projetos.addEventListener("click", fechaMenu);
-
 
 //fecha o menu, caso esteja aberto.
 function fechaMenu(){
